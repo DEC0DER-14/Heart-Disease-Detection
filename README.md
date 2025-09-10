@@ -1,2 +1,25 @@
-# Heart-Disease-Detection
-This project involved the development of a machine learning model to predict the likelihood of heart disease based on patient data. The model uses various features such as age, cholesterol levels, blood pressure, and other health metrics to assess the risk. Key tasks included data preprocessing (cleaning and normalizing the dataset), feature selection (identifying the most important factors), and model training using algorithms like Logistic Regression, Random Forest, and K-Nearest Neighbors (KNN). The project achieved an accuracy of 92% using a well-tuned Random Forest classifier. It also included data visualization using Matplotlib and Seaborn to help interpret the model's predictions and performance. This tool serves as an early detection system for heart disease, assisting healthcare professionals in making informed decisions.
+# Heart Disease Detection
+
+This project involves the development of a machine learning model to predict the likelihood of heart disease using patient health data.  
+The model uses features such as **age, blood pressure, cholesterol levels, glucose levels, BMI, lifestyle habits (smoking, alcohol, physical activity), and gender** to assess the risk.
+
+## Key Features
+- **Data Preprocessing**: 
+  - Handling missing values
+  - Categorical encoding (gender)
+  - Feature engineering (BMI calculation from height & weight)
+  - Standardization of features
+- **Model Training**:
+  - Trained using **Random Forest Classifier**
+  - Achieved an accuracy of ~**85%** on the test dataset
+- **CLI Tool**:
+  - Allows users to input health parameters directly
+  - Provides **probability-based prediction** (`Heart Disease` or `No Heart Disease`)
+- **Model Saving**:
+  - Trained model and scaler saved using **Joblib** for future use and deployment
+
+## Tech Stack
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Joblib
